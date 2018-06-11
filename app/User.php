@@ -18,9 +18,9 @@ class User extends Authenticatable
         'name', 'email', 'password',
     ];
     
-    public function tasklists()
+    public function tasks()
     {
-        return $this->hasMany(Tasklist::class);
+        return $this->hasMany(Task::class);
     }
 
     /**
